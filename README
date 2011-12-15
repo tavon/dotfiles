@@ -1,8 +1,8 @@
 .bash_profile   ->  .dotfiles/bash_profile
 .ackrc          ->  .dotfiles/ackrc
-.gemrc          ->  .dotfiles/gemrc
 .gitconfig      ->  .dotfiles/gitconfig
 .gitignore      ->  .dotfiles/gitignore
+.gemrc          ->  .dotfiles/ruby/gemrc
 .irbrc          ->  .dotfiles/ruby/irbrc
 .powconfig      ->  .dotfiles/ruby/powconfig
 .rvmrc          ->  .dotfiles/ruby/rvmrc
