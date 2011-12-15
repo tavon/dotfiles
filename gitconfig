@@ -1,0 +1,50 @@
+[core]
+  excludesfile = /Users/jhwang/.gitignore
+  editor = mate -w
+
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+
+  review = !"git log master..origin/master"
+  drupalcontribcvs = !sh -c 'git cvsimport -p x -v -d:pserver:anonymous@cvs.drupal.org:/cvs/drupal-contrib contributions/modules/$0'
+
+[user]
+  name = John Hwang
+  email = jhwang@lan.io
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[merge]
+  tool = opendiff
+
+[push]
+  default = matching
+
+[gui]
+  fontdiff = -family Monaco -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+
+[branch "develop"]
+  remote = origin
+  merge = refs/heads/develop
+
+[gitflow "branch"]
+  master = master
+  develop = develop
+
+[gitflow "prefix"]
+  feature = feature/
+  release = release/
+  hotfix = hotfix/
+  support = support/
+  versiontag =
