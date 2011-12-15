@@ -1,0 +1,10 @@
+.bash_profile -> /Users/jhwang/.configs/bash_profile
+.ackrc -> .configs/ackrc
+.gemrc -> .configs/gemrc
+.gitconfig -> .configs/gitconfig
+.gitignore -> .configs/gitignore
+.irbrc -> .configs/ruby/irbrc
+.powconfig -> .configs/ruby/powconfig
+.rvmrc -> .configs/ruby/rvmrc
+.vimrc -> /Users/jhwang/.vim/vimrc
+.vimrc.local -> .configs/vimrc.local
