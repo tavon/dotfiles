@@ -1,12 +1,35 @@
-# Flush DNS Cache
-alias fcache='dscacheutil -flushcache'
-
-# TextMate
-alias m='mate'
-
 # source $HOME/$CONFIGS_PATH/bash/ad
 source $HOME/$CONFIGS_PATH/bash/awk
 source $HOME/$CONFIGS_PATH/bash/colors
 source $HOME/$CONFIGS_PATH/bash/git
 source $HOME/$CONFIGS_PATH/bash/ruby
 source $HOME/$CONFIGS_PATH/bash/ssh
+
+# Flush DNS Cache
+alias fcache='dscacheutil -flushcache'
+
+# TextMate
+alias m='mate'
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+# -> Prevents accidentally clobbering files.
+alias mkdir='mkdir -p'
+
+alias which='type -a'
+alias ..='cd ..'
+alias path='echo -e ${PATH//:/\\n}'
+
+alias du='du -kh'       # Makes a more readable output.
+
+#-------------------------------------------------------------
+# The 'ls' family (this assumes you use a recent GNU ls)
+#-------------------------------------------------------------
+alias ll="ls -l"
+alias la='ls -Al'          # show hidden files
+alias lk='ls -lSr'         # sort by size, biggest last
+alias lt='ls -ltr'         # sort by date, most recent last
+alias lm='ls -al |more'    # pipe through 'more'
+alias lr='ls -lR'          # recursive ls
+alias tree='tree -Csu'     # nice alternative to 'recursive ls'
