@@ -9,4 +9,4 @@ function parse_git_branch {
 PS1="$RED\$(date +%H:%M) \w$YELLOW \$(parse_git_branch)$WHITE \$ "
 
 # Git Flow Completion
-source $(pwd)/$CONFIGS_PATH/git-flow-completion/.git-flow-completion.sh
+source $HOME/$CONFIGS_PATH/git-flow-completion/git-flow-completion.bash

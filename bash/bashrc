@@ -4,9 +4,9 @@ alias fcache='dscacheutil -flushcache'
 # TextMate
 alias m='mate'
 
-# source $(pwd)/$CONFIGS_PATH/ad
-source $(pwd)/$CONFIGS_PATH/awk
-source $(pwd)/$CONFIGS_PATH/colors
-source $(pwd)/$CONFIGS_PATH/git
-source $(pwd)/$CONFIGS_PATH/ruby
-source $(pwd)/$CONFIGS_PATH/ssh
+# source $HOME/$CONFIGS_PATH/bash/ad
+source $HOME/$CONFIGS_PATH/bash/awk
+source $HOME/$CONFIGS_PATH/bash/colors
+source $HOME/$CONFIGS_PATH/bash/git
+source $HOME/$CONFIGS_PATH/bash/ruby
+source $HOME/$CONFIGS_PATH/bash/ssh

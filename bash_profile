@@ -1,4 +1,4 @@
 CONFIGS_PATH='.configs'
 
-. ~/.profile
-. ~/.bashrc
+. $HOME/$CONFIGS_PATH/bash/profile
+. $HOME/$CONFIGS_PATH/bash/bashrc
