@@ -1,0 +1,12 @@
+# Flush DNS Cache
+alias fcache='dscacheutil -flushcache'
+
+# TextMate
+alias m='mate'
+
+# source $(pwd)/$CONFIGS_PATH/ad
+source $(pwd)/$CONFIGS_PATH/awk
+source $(pwd)/$CONFIGS_PATH/colors
+source $(pwd)/$CONFIGS_PATH/git
+source $(pwd)/$CONFIGS_PATH/ruby
+source $(pwd)/$CONFIGS_PATH/ssh

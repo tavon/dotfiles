@@ -1,0 +1,7 @@
+---
+gem: -n/usr/local/bin --no-ri --no-rdoc
+:backtrace: false
+:benchmark: false
+:verbose: true
+:update_sources: true
+:bulk_threshold: 1000
