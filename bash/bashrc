@@ -1,35 +1,25 @@
+# If not running interactively, don't do anything
+if [[ ! -z "$PS1" ]]; then
+
 # source $HOME/$CONFIGS_PATH/bash/ad
 source $HOME/$CONFIGS_PATH/bash/awk
 source $HOME/$CONFIGS_PATH/bash/colors
 source $HOME/$CONFIGS_PATH/bash/git
 source $HOME/$CONFIGS_PATH/bash/ruby
 source $HOME/$CONFIGS_PATH/bash/ssh
+source $HOME/$CONFIGS_PATH/bash/alias
 
-# Flush DNS Cache
-alias fcache='dscacheutil -flushcache'
+# don't put duplicate lines in the history.
+export HISTCONTROL=ignoredups
 
-# TextMate
-alias m='mate'
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-# -> Prevents accidentally clobbering files.
-alias mkdir='mkdir -p'
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
-alias which='type -a'
-alias ..='cd ..'
-alias path='echo -e ${PATH//:/\\n}'
+# enable programmable completion
+[ -f /etc/bash_completion ] && . /etc/bash_completion
 
-alias du='du -kh'       # Makes a more readable output.
-
-#-------------------------------------------------------------
-# The 'ls' family (this assumes you use a recent GNU ls)
-#-------------------------------------------------------------
-alias ll="ls -l"
-alias la='ls -Al'          # show hidden files
-alias lk='ls -lSr'         # sort by size, biggest last
-alias lt='ls -ltr'         # sort by date, most recent last
-alias lm='ls -al |more'    # pipe through 'more'
-alias lr='ls -lR'          # recursive ls
-alias tree='tree -Csu'     # nice alternative to 'recursive ls'
+fi
