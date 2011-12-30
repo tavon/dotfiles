@@ -19,3 +19,13 @@ NC='\[\033[00m\]' #'\e[0m' # No Color
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# enable color ls
+if [ "$TERM" != "dumb" ]; then
+    [ -x /usr/bin/dircolors ] && eval "`dircolors -b`"
+    if [ `uname` = Darwin ]; then
+alias ls='ls -G'
+    else
+alias ls='ls --color=auto'
+    fi
+fi
