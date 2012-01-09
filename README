@@ -1,9 +1,12 @@
-.bash_profile   ->  .dotfiles/bash_profile
-.ackrc          ->  .dotfiles/ackrc
-.gitconfig      ->  .dotfiles/gitconfig
-.gitignore      ->  .dotfiles/gitignore
-.gemrc          ->  .dotfiles/ruby/gemrc
-.irbrc          ->  .dotfiles/ruby/irbrc
-.powconfig      ->  .dotfiles/ruby/powconfig
-.rvmrc          ->  .dotfiles/ruby/rvmrc
-.vimrc.local    ->  .dotfiles/vimrc.local
+Command to run
+
+ln -s .dotfiles/bash_profile .bash_profile
+ln -s .dotfiles/ackrc .ackrc
+ln -s .dotfiles/gitconfig .gitconfig
+ln -s .dotfiles/gitignore .gitignore
+ln -s .dotfiles/ruby/gemrc .gemrc
+ln -s .dotfiles/ruby/irbrc .irbrc
+ln -s .dotfiles/ruby/powconfig .powconfigln -s .dotfiles/ruby/rvmrc .rvmrc
+ln -s .dotfiles/vimrc.local .vimrc.local
+
+You need to have .ssh/config even if it's empty
