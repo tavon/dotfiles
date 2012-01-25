@@ -1,0 +1,42 @@
+fontName              = "Consolas"
+fontSize              = 14
+windowTitle           = "$TM_DISPLAYNAME${TM_DIRECTORY/\A(?:\/Users\/jhwang\w+\/?(.*)|(.+))\z/${2:? – ${2/\A\/Users\/jhwang/~/}:${1/\A(?=.)/ – /}}/}"
+
+myExtraIncludes       = ".tm_properties,.htaccess,.gitignore"
+fileBrowserGlob       = "{*,$myExtraIncludes}"
+include               = "{$include,$myExtraIncludes}"
+
+myExtraExcludes       = "log,vendor,tmp,sass-cache"
+excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}" 
+excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}" 
+excludeInBrowser      = "{$excludeInBrowser,log,tmp}" 
+
+# Variables
+TM_ORGANIZATION_NAME  = 'Lanio'
+TM_GIT                = "/usr/bin/git"
+PATH                  = "$PATH:$HOME/bin"
+
+
+[ text ]
+softWrap              = true
+softTabs	            = true
+tabSize               = 2
+
+[ source ]
+softWrap              = true
+softTabs	            = true
+tabSize               = 2
+
+[ *.{txt,md,mdown,markdown} ]
+wrapColumn	          = "Use Window Frame"
+
+[ .git/COMMIT_EDITMSG ]
+softWrap              = true
+spellChecking         = true
+spellingLanguage      = 'en'
+
+[ "{README,README.md,INSTALL,LICENSE,TODO}" ]
+fileType              = "text.plain"
+
+[ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
+binary                = true

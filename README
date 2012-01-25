@@ -1,4 +1,4 @@
-Command to run
+Commands to run
 
 ln -s .dotfiles/bash_profile .bash_profile
 ln -s .dotfiles/ackrc .ackrc
@@ -8,5 +8,6 @@ ln -s .dotfiles/ruby/gemrc .gemrc
 ln -s .dotfiles/ruby/irbrc .irbrc
 ln -s .dotfiles/ruby/powconfig .powconfigln -s .dotfiles/ruby/rvmrc .rvmrc
 ln -s .dotfiles/vimrc.local .vimrc.local
+ln -s .dotfiles/tm_properties .tm_properties
 
 You need to have .ssh/config even if it's empty
