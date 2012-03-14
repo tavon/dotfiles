@@ -22,4 +22,7 @@ shopt -s checkwinsize
 # enable programmable completion
 [ -f /etc/bash_completion ] && . /etc/bash_completion
 
+source $HOME/$CONFIGS_PATH/git-flow-completion/git-flow-completion.bash
+source $HOME/$CONFIGS_PATH/git-completion.bash
+
 fi
