@@ -3,6 +3,7 @@ alias fcache='dscacheutil -flushcache'
 
 # TextMate
 alias m='mate'
+alias e="subl -n ."
 
 alias rm='rm -i'
 alias cp='cp -i'
