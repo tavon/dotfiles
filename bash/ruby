@@ -75,11 +75,6 @@ function cus {
   fi
 }
 
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
-
-
 ## Rubygems documentation lookup
 ## From http://stephencelis.com/archive/2008/6/bashfully-yours-gem-shortcuts
 
