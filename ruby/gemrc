@@ -1,5 +1,5 @@
 ---
-gem: -n/usr/local/bin --no-ri --no-rdoc
+gem: --no-ri --no-rdoc
 :backtrace: false
 :benchmark: false
 :verbose: true
