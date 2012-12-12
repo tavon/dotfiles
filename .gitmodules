@@ -1,6 +1,8 @@
+# Git flow
 [submodule "git-flow-completion"]
-	path = git-flow-completion
-	url = https://github.com/bobthecow/git-flow-completion.git
+  path = git-flow-completion
+  url = https://github.com/bobthecow/git-flow-completion.git
+
 # Emacs
 [submodule "emacs.d/vendor/textmate.el"]
 	path = emacs.d/vendor/textmate.el
