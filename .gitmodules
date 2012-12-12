@@ -1,3 +1,13 @@
 [submodule "git-flow-completion"]
 	path = git-flow-completion
 	url = https://github.com/bobthecow/git-flow-completion.git
+# Emacs
+[submodule "emacs.d/vendor/textmate.el"]
+	path = emacs.d/vendor/textmate.el
+	url = git://github.com/defunkt/textmate.el.git
+[submodule "emacs.d/vendor/coffee-mode"]
+	path = emacs.d/vendor/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
+[submodule "emacs.d/vendor/markdown-mode"]
+	path = emacs.d/vendor/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
