@@ -40,9 +40,9 @@
 [submodule "vim/bundle/vim-eunuch"]
 	path = vim/bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
-[submodule "vim/bundle/nerdtree"]
-  path = vim/bundle/nerdtree
-  url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/vim-powerline"]
   path = vim/bundle/vim-powerline
   url = git://github.com/Lokaltog/vim-powerline.git 
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
