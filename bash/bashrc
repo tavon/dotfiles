@@ -6,6 +6,7 @@ source $HOME/$CONFIGS_PATH/bash/awk
 source $HOME/$CONFIGS_PATH/bash/colors
 source $HOME/$CONFIGS_PATH/bash/git
 source $HOME/$CONFIGS_PATH/bash/ruby
+source $HOME/$CONFIGS_PATH/bash/python
 source $HOME/$CONFIGS_PATH/bash/ssh
 source $HOME/$CONFIGS_PATH/bash/alias
 
