@@ -1,17 +1,15 @@
+"call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible                " choose no compatibility with legacy vi
-filetype off                   " required!
 
 "" <leader>
 let mapleader = ","
 
 set encoding=utf-8
 
-set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
-
 "" Whitespace
+filetype plugin indent on       " load file type plugins + indentation
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
@@ -29,9 +27,11 @@ syntax enable
 set background=dark
 colorscheme railscasts
 set number
+set numberwidth=5
 set ruler
 set cursorline
 set showmatch
+set showcmd                     " display incomplete commands
 
 "" No backups
 set nobackup
@@ -41,6 +41,19 @@ set noswapfile
 "" Buffers
 noremap <tab> <C-w><C-w>
 nmap <leader>d :bd<CR>
+
+" Status Line
+set showtabline=2
+"set cmdheight=2
+"set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+set wildmode=longest,list
+set wildmenu                  " make tab completion for files/buffers act like bash
+python from powerline.ext.vim import source_plugin; source_plugin()
+"source /Library/Python/2.7/site-packages/powerline/ext/vim/powerline.vim
+
+" NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " ,a to Ack
 nnoremap <leader>a :Ack 
@@ -155,8 +168,8 @@ function! RunNearestTest()
     call RunTestFile(":" . spec_line_number . " -b")
 endfunction
 
-map <leader>t :call RunTestFile()<cr>
-map <leader>T :call RunNearestTest()<cr>
-map <leader>a :call RunTests('')<cr>
-map <leader>c :w\|:!script/features<cr>
-map <leader>w :w\|:!script/features --profile wip<cr>
+"map <leader>t :call RunTestFile()<cr>
+"map <leader>T :call RunNearestTest()<cr>
+"map <leader>a :call RunTests('')<cr>
+"map <leader>c :w\|:!script/features<cr>
+"map <leader>w :w\|:!script/features --profile wip<cr>
