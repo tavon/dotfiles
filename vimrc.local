@@ -1,7 +1,7 @@
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible                " choose no compatibility with legacy vi
-filetype off                   " required!
+filetype on                    " required!
 
 "" <leader>
 let mapleader = ","
