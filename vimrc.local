@@ -1,4 +1,3 @@
-"call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible                " choose no compatibility with legacy vi
@@ -42,16 +41,38 @@ set noswapfile
 noremap <tab> <C-w><C-w>
 nmap <leader>d :bd<CR>
 
+" Tab Navigation
+map <silent> <C-]> :tabnext<CR>
+map <silent> <C-[> :tabprev<CR>
+
+" Close the current buffer
+map <leader>bd :Bclose<cr>
+
+" Close all the buffers
+map <leader>ba :1,1000 bd!<cr>
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
 " Status Line
 set showtabline=2
-"set cmdheight=2
+set cmdheight=2
 "set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
-set wildmode=longest,list
 set wildmenu                  " make tab completion for files/buffers act like bash
+set wildmode=longest,list
+set laststatus=2              " always show status line
 python from powerline.ext.vim import source_plugin; source_plugin()
-"source /Library/Python/2.7/site-packages/powerline/ext/vim/powerline.vim
+
 
 " NERDTree
+noremap <silent> <C-d> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
