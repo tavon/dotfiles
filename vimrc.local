@@ -1,4 +1,3 @@
-"call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 
 set nocompatible                " choose no compatibility with legacy vi
@@ -17,7 +16,7 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 
 "" Searching
 set hlsearch                    " highlight matches
-:nnoremap <CR> :nohlsearch<cr>
+nnoremap <CR> :nohlsearch<cr>
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
@@ -39,28 +38,17 @@ set nowritebackup
 set noswapfile
 
 "" Buffers
-noremap <tab> <C-w><C-w>
+nnoremap <tab> <C-w><C-w>
 nmap <leader>d :bd<CR>
 
 " Status Line
 set showtabline=2
-"set cmdheight=2
+set cmdheight=2
 "set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 set wildmode=longest,list
 set wildmenu                  " make tab completion for files/buffers act like bash
-python from powerline.ext.vim import source_plugin; source_plugin()
-"source /Library/Python/2.7/site-packages/powerline/ext/vim/powerline.vim
 
-" NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" ,a to Ack
-nnoremap <leader>a :Ack 
-
-" Rotating among results in an ack search
-map <C-n> :cn<CR>
-map <C-p> :cp<CR>
+set ttyfast
 
 " Splits  ,v to open a new vertical split and switch to it
 nnoremap <leader>v <C-w>v<C-w>l
@@ -70,6 +58,26 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Bundles
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"" Powerline
+"let g:Powerline_symbols = 'fancy'
+"source ~/.vim/bundle/vim-powerline/plugin/Powerline.vim
+
+" NERDTree
+" Open NERDTree if a file is not specified
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" ,a to Ack
+nnoremap <leader>a :Ack 
+
+" Rotating among results in an ack search
+map <C-n> :cn<CR>
+map <C-p> :cp<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
