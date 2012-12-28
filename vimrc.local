@@ -49,7 +49,6 @@ map <silent> <C-]> :tabnext<CR>
 
 " Close the current buffer
 nmap <leader>d :bd<CR>
-map <leader>bd :Bclose<cr>
 
 " Close all the buffers
 map <leader>ba :1,1000 bd!<cr>
@@ -66,11 +65,10 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Status Line
 set showtabline=2
+set laststatus=2              " always show status line
 set cmdheight=2
-"set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 set wildmenu                  " make tab completion for files/buffers act like bash
 set wildmode=longest,list
-set laststatus=2              " always show status line
 set scrolloff=3
 
 set ttyfast
@@ -90,7 +88,6 @@ nnoremap <C-l> <C-w>l
 
 "" Powerline
 let g:Powerline_symbols = 'fancy'
-"source ~/.vim/bundle/vim-powerline/plugin/Powerline.vim
 
 " NERDTree
 " Open NERDTree if a file is not specified
@@ -106,7 +103,8 @@ map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
 " ,f to FuzzyFinder
-nmap ,f :FufFile<CR>
+nmap <leader>ff :FufFile<CR>
+nmap <leader>fcd :FufDir<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
