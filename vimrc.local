@@ -12,6 +12,7 @@ filetype plugin indent on       " load file type plugins + indentation
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
+set smarttab
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
 "" Searching
@@ -23,11 +24,13 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Syntax
 syntax enable
-set background=dark
 colorscheme railscasts
+set background=dark
 set number
 set numberwidth=5
 set ruler
+set textwidth=72
+set colorcolumn=+1
 set cursorline
 set showmatch
 set showcmd                     " display incomplete commands
@@ -39,13 +42,13 @@ set noswapfile
 
 "" Buffers
 nnoremap <tab> <C-w><C-w>
-nmap <leader>d :bd<CR>
 
 " Tab Navigation
 map <silent> <C-]> :tabnext<CR>
-map <silent> <C-[> :tabprev<CR>
+"map <silent> <C-[> :tabprev<CR>
 
 " Close the current buffer
+nmap <leader>d :bd<CR>
 map <leader>bd :Bclose<cr>
 
 " Close all the buffers
@@ -68,6 +71,7 @@ set cmdheight=2
 set wildmenu                  " make tab completion for files/buffers act like bash
 set wildmode=longest,list
 set laststatus=2              " always show status line
+set scrolloff=3
 
 set ttyfast
 
@@ -100,6 +104,9 @@ nnoremap <leader>a :Ack
 " Rotating among results in an ack search
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
+
+" ,f to FuzzyFinder
+nmap ,f :FufFile<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
