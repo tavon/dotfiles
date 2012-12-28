@@ -7,8 +7,11 @@ let mapleader = ","
 
 set encoding=utf-8
 
+filetype on
+filetype plugin on       " load file type plugins + indentation
+filetype indent on
+
 "" Whitespace
-filetype plugin indent on       " load file type plugins + indentation
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
