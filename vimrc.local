@@ -17,7 +17,7 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 
 "" Searching
 set hlsearch                    " highlight matches
-nnoremap <CR> :nohlsearch<cr>
+nnoremap <CR> :nohlsearch<CR>
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
@@ -33,7 +33,6 @@ set textwidth=72
 set colorcolumn=+1
 set cursorline
 set showmatch
-set showcmd                     " display incomplete commands
 
 "" No backups
 set nobackup
@@ -70,8 +69,7 @@ set cmdheight=2
 set wildmenu                  " make tab completion for files/buffers act like bash
 set wildmode=longest,list
 set scrolloff=3
-
-set ttyfast
+"set ttyfast
 
 " Splits  ,v to open a new vertical split and switch to it
 nnoremap <leader>v <C-w>v<C-w>l
