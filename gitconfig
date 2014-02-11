@@ -1,6 +1,6 @@
 [core]
-  excludesfile = /Users/jhwang/.gitignore
-  editor = mate -w
+	excludesfile = /Users/jhwang/.gitignore
+  editor = vim
 
 [alias]
   st = status
@@ -12,8 +12,8 @@
   drupalcontribcvs = !sh -c 'git cvsimport -p x -v -d:pserver:anonymous@cvs.drupal.org:/cvs/drupal-contrib contributions/modules/$0'
 
 [user]
-  name = John Hwang
-  email = johnyhwang@gmail.com
+	name = John Hwang
+	email = johnyhwang@gmail.com
 
 [color]
   branch = auto
@@ -48,3 +48,9 @@
   hotfix = hotfix/
   support = support/
   versiontag =
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
