@@ -9,6 +9,8 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+alias log="~/bin/logtodayone.rb"
+
 # -> Prevents accidentally clobbering files.
 alias mkdir='mkdir -p'
 
