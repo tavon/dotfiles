@@ -30,3 +30,11 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 alias tree='tree -Csu'     # nice alternative to 'recursive ls'
+
+# ---------------------
+# MAC OS X
+# ---------------------
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES;
+killall Finder /System/Library/CoreServices/Finder.app'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO;
+killall Finder /System/Library/CoreServices/Finder.app'

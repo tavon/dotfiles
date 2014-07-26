@@ -13,7 +13,7 @@ $aliases['staging'] = array(
   ),
   'command-specific' => array(
     'sql-sync' => array(
-      'source-dump' => '/usr/local/share/drush-dump/newnetwork.production-sync.sql',
+      'source-dump' => '/home/lanio/drush-dumps/newnetwork.production-sync.sql',
       'no-cache' => TRUE,
     ),
   ),
@@ -24,7 +24,7 @@ $aliases['network_d6'] = array(
 
   'command-specific' => array(
     'sql-sync' => array(
-      'source-dump' => '/usr/local/share/drush-dump/newnetwork.production-sync.sql',
+      'source-dump' => '/home/lanio/drush-dumps/newnetwork.production-sync.sql',
     ),
   ),
 );
@@ -32,7 +32,7 @@ $aliases['network_d6'] = array(
 $local_sites = '/Users/jhwang/Sites/';
 $aliases['local'] = array(
   'root' => $local_sites . 'faithgrid/guides.faithgrid.com',
-  'db-url' => "mysql://root@localhost/network",
+  'db-url' => "mysql://root@localhost/faithgrid",
   'path-aliases' => array(
     '%files' => $local_sites . 'faithgrid/guides.faithgrid.com/sites/default/files',
   ),
