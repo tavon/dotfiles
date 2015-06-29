@@ -32,10 +32,15 @@ set background=dark
 set number
 set numberwidth=5
 set ruler
-set textwidth=72
+set textwidth=80
 set colorcolumn=+1
 set cursorline
 set showmatch
+
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=233 guibg=#121212
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 "" No backups
 set nobackup
