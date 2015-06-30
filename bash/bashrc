@@ -10,7 +10,6 @@ source $HOME/$CONFIGS_PATH/bash/python
 source $HOME/$CONFIGS_PATH/bash/ssh
 source $HOME/$CONFIGS_PATH/bash/alias
 source $HOME/$CONFIGS_PATH/bash/tmuxinator
-source $HOME/$CONFIGS_PATH/bash/powconfig
 
 # don't put duplicate lines in the history.
 export HISTCONTROL=ignoredups
