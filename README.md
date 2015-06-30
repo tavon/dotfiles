@@ -12,6 +12,7 @@ ln -s .dotfiles/ruby/powconfig .powconfig
 ln -s .dotfiles/ruby/rvmrc .rvmrc
 ln -s .dotfiles/vim .vim
 ln -s .dotfiles/vimrc.local .vimrc.local
+ln -s .dotfiles/tmux.conf .tmux.conf
 ```
 
 Git Flow
