@@ -56,3 +56,66 @@ tmuxinator
 ```bash
 $ ln -s ~/.dotfiles/tmux/.tmuxinator
 ```
+
+Submodules
+----------
+```gitconfig
+# Emacs
+[submodule "emacs/emacs.d/vendor/textmate.el"]
+    path = emacs/emacs.d/vendor/textmate.el
+    url = git://github.com/defunkt/textmate.el.git
+[submodule "emacs/emacs.d/vendor/markdown-mode"]
+    path = emacs/emacs.d/vendor/markdown-mode
+    url = git://jblevins.org/git/markdown-mode.git
+
+# Vim
+[submodule "vim/.vim/bundle/Command-T"]
+    path = vim/.vim/bundle/Command-T
+    url = https://github.com/wincent/Command-T.git
+  ignore = untracked
+[submodule "vim/.vim/bundle/vim-fugitive"]
+    path = vim/.vim/bundle/vim-fugitive
+    url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/L9"]
+    path = vim/.vim/bundle/L9
+    url = https://github.com/vim-scripts/L9
+[submodule "vim/.vim/bundle/vim-fuzzyfinder"]
+    path = vim/.vim/bundle/vim-fuzzyfinder
+    url = https://github.com/clones/vim-fuzzyfinder
+[submodule "vim/.vim/bundle/vim-ruby"]
+    path = vim/.vim/bundle/vim-ruby
+    url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/.vim/bundle/vim-commentary"]
+    path = vim/.vim/bundle/vim-commentary
+    url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/.vim/bundle/vim-eunuch"]
+    path = vim/.vim/bundle/vim-eunuch
+    url = https://github.com/tpope/vim-eunuch.git
+[submodule "vim/.vim/bundle/vim-powerline"]
+  path = vim/.vim/bundle/vim-powerline
+  url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/.vim/bundle/nerdtree"]
+    path = vim/.vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/vim-ack"]
+    path = vim/.vim/bundle/vim-ack
+    url = git://github.com/mileszs/ack.vim.git
+[submodule "vim/.vim/bundle/vimux"]
+    path = vim/.vim/bundle/vimux
+    url = git://github.com/benmills/vimux.git
+[submodule "vim/.vim/bundle/vim-markdown"]
+    path = vim/.vim/bundle/vim-markdown
+    url = git://github.com/tpope/vim-markdown.git
+[submodule "vim/.vim/bundle/supertab"]
+    path = vim/.vim/bundle/supertab
+    url = https://github.com/ervandew/supertab.git
+[submodule "vim/.vim/bundle/vim-rails"]
+    path = vim/.vim/bundle/vim-rails
+    url = git://github.com/tpope/vim-rails.git
+[submodule "vim/.vim/bundle/vim-bundler"]
+    path = vim/.vim/bundle/vim-bundler
+    url = git://github.com/tpope/vim-bundler.git
+[submodule "scripts/z"]
+    path = scripts/z
+    url = git@github.com:rupa/z.git
+```

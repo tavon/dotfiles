@@ -1,57 +1,57 @@
 # Emacs
-[submodule "emacs.d/vendor/textmate.el"]
-	path = emacs.d/vendor/textmate.el
+[submodule "emacs/emacs.d/vendor/textmate.el"]
+	path = emacs/emacs.d/vendor/textmate.el
 	url = git://github.com/defunkt/textmate.el.git
-[submodule "emacs.d/vendor/markdown-mode"]
-	path = emacs.d/vendor/markdown-mode
+[submodule "emacs/emacs.d/vendor/markdown-mode"]
+	path = emacs/emacs.d/vendor/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
 
 # Vim
-[submodule "vim/bundle/Command-T"]
-	path = vim/bundle/Command-T
+[submodule "vim/.vim/bundle/Command-T"]
+	path = vim/.vim/bundle/Command-T
 	url = https://github.com/wincent/Command-T.git
   ignore = untracked
-[submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/L9"]
-	path = vim/bundle/L9
+[submodule "vim/.vim/bundle/L9"]
+	path = vim/.vim/bundle/L9
 	url = https://github.com/vim-scripts/L9
-[submodule "vim/bundle/vim-fuzzyfinder"]
-	path = vim/bundle/vim-fuzzyfinder
+[submodule "vim/.vim/bundle/vim-fuzzyfinder"]
+	path = vim/.vim/bundle/vim-fuzzyfinder
 	url = https://github.com/clones/vim-fuzzyfinder
-[submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
+[submodule "vim/.vim/bundle/vim-ruby"]
+	path = vim/.vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/bundle/vim-commentary"]
-	path = vim/bundle/vim-commentary
+[submodule "vim/.vim/bundle/vim-commentary"]
+	path = vim/.vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
-[submodule "vim/bundle/vim-eunuch"]
-	path = vim/bundle/vim-eunuch
+[submodule "vim/.vim/bundle/vim-eunuch"]
+	path = vim/.vim/bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
-[submodule "vim/bundle/vim-powerline"]
-  path = vim/bundle/vim-powerline
-  url = git://github.com/Lokaltog/vim-powerline.git 
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+[submodule "vim/.vim/bundle/vim-powerline"]
+  path = vim/.vim/bundle/vim-powerline
+  url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/vim-ack"]
-	path = vim/bundle/vim-ack
+[submodule "vim/.vim/bundle/vim-ack"]
+	path = vim/.vim/bundle/vim-ack
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "vim/bundle/vimux"]
-	path = vim/bundle/vimux
+[submodule "vim/.vim/bundle/vimux"]
+	path = vim/.vim/bundle/vimux
 	url = git://github.com/benmills/vimux.git
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
+[submodule "vim/.vim/bundle/supertab"]
+	path = vim/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "vim/bundle/vim-rails"]
-	path = vim/bundle/vim-rails
+[submodule "vim/.vim/bundle/vim-rails"]
+	path = vim/.vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule "vim/bundle/vim-bundler"]
-	path = vim/bundle/vim-bundler
+[submodule "vim/.vim/bundle/vim-bundler"]
+	path = vim/.vim/bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
 [submodule "scripts/z"]
 	path = scripts/z
