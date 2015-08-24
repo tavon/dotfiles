@@ -29,12 +29,29 @@ You need to have .ssh/config even if it's empty
 $ touch .ssh/config
 ```
 
+Editors
+-------
+
+Emacs
+=====
+```bash
+$ ln -s ~/.dotfiles/editors/emacs/emacs.local ~/.emacs.local
+```
+
+Vim
+===
+```bash
+$ ln -s ~/.dotfiles/editors/vim/.vim
+$ ln -s ~/.dotfiles/editors/vim/.vimrc.local .vimrc
+$ ln -s ~/.dotfiles/editors/vim/.gvimrc.local .gvimrc
+```
+
 Sublime Text 3 Support
-----------------------
+======================
 ```bash
 $ cd ~/Library/Application\ Support/Sublime\ Text\ 3
-$ ln -s ~/.dotfiles/Sublime\ Text\ 3/Installed\ Packages ./Installed\ Packages
-$ ln -s ~/.dotfiles/Sublime\ Text\ 3/Packages ./Packages
+$ ln -s ~/.dotfiles/editors/Sublime\ Text\ 3/Installed\ Packages ./Installed\ Packages
+$ ln -s ~/.dotfiles/editors/Sublime\ Text\ 3/Packages ./Packages
 ```
 
 ```bash
