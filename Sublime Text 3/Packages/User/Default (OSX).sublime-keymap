@@ -1,0 +1,5 @@
+[
+  { "keys": ["command+shift+r"], "command": "ruby_markers" },
+  { "keys": ["ctrl+shift+."], "command": "erb" },
+  { "keys": ["ctrl+d"], "command": "right_delete" }
+]

@@ -1,0 +1,38 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Abacus",
+		"Alignment",
+		"Better CoffeeScript",
+		"CTags",
+		"Cucumber",
+		"DashDoc",
+		"Dotfiles Syntax Highlighting",
+		"Emmet",
+		"ExpressionEngine",
+		"Gist",
+		"LaTeX Word Count",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"Razor",
+		"RSpec",
+		"RSpec (snippets and syntax)",
+		"Ruby Markers",
+		"Sass",
+		"SCSS",
+		"SideBarEnhancements",
+		"Strapdown Markdown Preview",
+		"SublimeERB",
+		"Table Editor",
+		"Theme - Soda",
+		"Theme - Spacegray",
+		"Typewriter",
+		"WordCount",
+		"WordPress"
+	]
+}
