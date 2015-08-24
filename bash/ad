@@ -1,8 +1,0 @@
-# ad is for *alias directory*. It creates persistent
-# aliases.
-# function ad
-# {
-#   ~/$CONFIGS_PATH/lib/aliasdir.rb $@
-#   eval `~/$CONFIGS_PATH/lib/aliasdir.rb --dump`
-# }
-# eval `~/$CONFIGS_PATH/lib/aliasdir.rb --dump`

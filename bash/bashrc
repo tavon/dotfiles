@@ -1,30 +1,30 @@
 # If not running interactively, don't do anything
 if [[ ! -z "$PS1" ]]; then
 
+for file in $HOME/$CONFIGS_PATH/bash/.{exports,awk,bash_prompt,ssh,history,completion,alias,completion,functions}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file
+
 # source $HOME/$CONFIGS_PATH/bash/ad
-source $HOME/$CONFIGS_PATH/bash/awk
-source $HOME/$CONFIGS_PATH/bash/colors
-source $HOME/$CONFIGS_PATH/bash/git
 source $HOME/$CONFIGS_PATH/bash/ruby
 source $HOME/$CONFIGS_PATH/bash/python
-source $HOME/$CONFIGS_PATH/bash/ssh
-source $HOME/$CONFIGS_PATH/bash/alias
-source $HOME/$CONFIGS_PATH/bash/tmuxinator
 
-# don't put duplicate lines in the history.
-export HISTCONTROL=ignoredups
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
+##
+## better `cd`'ing
+##
 
-# enable programmable completion
-[ -f /etc/bash_completion ] && . /etc/bash_completion
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
 
-source $HOME/$CONFIGS_PATH/git-flow-completion/git-flow-completion.bash
-source $HOME/$CONFIGS_PATH/git-completion.bash
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
 
 fi

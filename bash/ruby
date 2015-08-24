@@ -6,21 +6,6 @@ alias r='touch tmp/restart.txt'
 alias tmig="rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare"
 alias mycucumber='script/cucumber --require features/support/env.rb --require features/step_definitions/ --require features/support/'
 
-function cuw {
-  if [ $# -eq 0 ]; then
-    script/cucumber -p default features/webrat
-  else
-    script/cucumber -p default $@
-  fi
-}
-function cus {
-  if [ $# -eq 0 ]; then
-    script/cucumber -pselenium features/selenium
-  else
-    script/cucumber -pselenium $@
-  fi
-}
-
 ## Rubygems documentation lookup
 ## From http://stephencelis.com/archive/2008/6/bashfully-yours-gem-shortcuts
 
