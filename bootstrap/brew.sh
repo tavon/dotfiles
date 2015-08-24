@@ -2,12 +2,12 @@
 
 # Install command-line tools using Homebrew
 
+
 # Make sure we’re using the latest Homebrew
 brew update
 
 # Upgrade any already-installed formulae
 brew upgrade
-
 
 # GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -17,7 +17,6 @@ brew install moreutils
 brew install findutils
 # GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --default-names
-
 
 # Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
@@ -37,14 +36,26 @@ brew install wget --enable-iri
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
+brew install tmux
 
+# ruby
+brew install openssl
+brew install libyaml
+brew install libffi
+
+brew install rbenv
+brew install ruby-build
+brew install freetds  # SQL Server support
+
+# PHP
+brew install php56
+brew install composer
 
 # run this script when this file changes guy.
 brew install entr
 
 # github util. imho better than hub
 brew install gh
-
 
 # mtr - ping & traceroute. best.
 brew install mtr
@@ -68,10 +79,13 @@ brew install ffmpeg --with-libvpx
 
 brew install terminal-notifier
 
-brew install android-platform-tools
+brew install httrack
+brew install gibo
+
+# brew install android-platform-tools
 brew install pidcat   # colored logcat guy
 
-brew install zsh
+# brew install zsh
 
 # Remove outdated versions from the cellar
 brew cleanup

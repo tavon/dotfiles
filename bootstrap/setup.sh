@@ -139,6 +139,12 @@ git clone https://github.com/thebitguru/play-button-itunes-patch ~/code/play-but
 #   * then you grab public URL and send off your video message in a heartbeat.
 
 
+# Dropbox Integration
+
+# 1) Desktop
+# 2)
+
+
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
