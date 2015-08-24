@@ -46,6 +46,12 @@ brew install libffi
 brew install rbenv
 brew install ruby-build
 brew install freetds  # SQL Server support
+# rbenv init
+# rbenv install 1.9.3-p362
+# rbenv install 2.0.0-p0
+# rbenv global 2.0.0-p0
+# gem install bundler compass sass bootstrap-sass
+# rbenv rehash
 
 # PHP
 brew install php56
