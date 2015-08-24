@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 if [[ ! -z "$PS1" ]]; then
 
-for file in $HOME/$CONFIGS_PATH/bash/.{exports,awk,bash_prompt,ssh,history,completion,alias,completion,functions}; do
+for file in $HOME/$CONFIGS_PATH/bash/.{exports,awk,ssh,history,completion,alias,colors,completion,functions,bash_prompt}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
