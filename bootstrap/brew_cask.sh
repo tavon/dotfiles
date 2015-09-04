@@ -102,8 +102,10 @@ brew cask install cyberduck
 brew cask install chicken
 brew cask install chromecast
 brew cask install keycastr
-# brew cask install hazel
-# brew cask install hocus-focus
+
+brew cask install selfcontrol
+brew cask install hazel
+brew cask install hocus-focus
 brew cask install caffine
 # brew cask install pophub
 
