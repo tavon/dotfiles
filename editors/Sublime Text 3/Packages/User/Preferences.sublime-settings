@@ -42,18 +42,18 @@
 		"coverage",
 		".zeus.sock"
 	],
-	"font_face": "Consolas",
-	"font_size": 13.0,
+	"font_face": "Hack",
+	"font_size": 14.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"WordCount",
-		"Markdown",
 		"Color Highlighter",
 		"Google Spell Check",
+		"Markdown",
+		"SFTP",
 		"Vintage",
-		"SFTP"
+		"WordCount"
 	],
 	"new_window_settings":
 	{
