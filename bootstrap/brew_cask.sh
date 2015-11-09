@@ -119,3 +119,5 @@ brew cask install carbon-copy-cloner
 
 # brew cask install wacom-tablet
 # brew cask install xscope
+
+brew cask install aerial
