@@ -53,11 +53,6 @@ brew install freetds  # SQL Server support
 # gem install bundler compass sass bootstrap-sass
 # rbenv rehash
 
-# Docker
-brew install boot2docker
-brew install docker
-
-
 # PHP
 brew install php56
 brew install composer
