@@ -59,6 +59,7 @@ brew cask install dockertoolbox
 # image
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install licecap
 # brew cask install gyazo
 
 brew cask install sketch
