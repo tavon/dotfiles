@@ -6,6 +6,8 @@ CONFIGS_PATH='.dotfiles'
 
 export PATH=/usr/local/bin:/usr/local/mysql/bin:$HOME/bin:$HOME/.composer/vendor/bin:$PATH
 
+export PATH="~/.bin:$PATH"
+
 # rbenv
 . $HOME/$CONFIGS_PATH/ruby/.rbenv
 
