@@ -56,3 +56,6 @@
 [submodule "scripts/z"]
 	path = scripts/z
 	url = git@github.com:rupa/z.git
+[submodule "editors/vim/bundle/railscasts-theme"]
+	path = editors/vim/bundle/railscasts-theme
+	url = git@github.com:jpo/vim-railscasts-theme.git
