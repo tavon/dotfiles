@@ -1,4 +1,4 @@
-call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 
 set nocompatible                " choose no compatibility with legacy vi
 
