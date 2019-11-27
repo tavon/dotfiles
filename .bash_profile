@@ -2,7 +2,7 @@ CONFIGS_PATH='.dotfiles'
 
 . $HOME/$CONFIGS_PATH/bash/bashrc
 . $HOME/$CONFIGS_PATH/tmux/.tmuxinator
-. $HOME/$CONFIGS_PATH/scripts/z/z.sh
+#. $HOME/$CONFIGS_PATH/scripts/z/z.sh
 
 export PATH=/usr/local/bin:/usr/local/mysql/bin:$HOME/bin:$HOME/.composer/vendor/bin:$PATH
 
