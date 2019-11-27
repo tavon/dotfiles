@@ -8,11 +8,9 @@ ln -s .dotfiles/git/.gitconfig .gitconfig
 ln -s .dotfiles/git/.gitignore .gitignore
 ln -s .dotfiles/ruby/.gemrc .gemrc
 ln -s .dotfiles/ruby/.irbrc .irbrc
-ln -s .dotfiles/ruby/.powconfig .powconfig
 ln -s .dotfiles/ruby/.rvmrc .rvmrc
 ln -s .dotfiles/vim/.vim .vim
 ln -s .dotfiles/vim/.vimrc.local .vimrc.local
-ln -s .dotfiles/tmux/.tmux.conf .tmux.conf
 ```
 
 Git Flow
@@ -41,9 +39,9 @@ $ ln -s ~/.dotfiles/editors/emacs/emacs.local ~/.emacs.local
 Vim
 ===
 ```bash
-$ ln -s ~/.dotfiles/editors/vim/.vim
-$ ln -s ~/.dotfiles/editors/vim/.vimrc.local .vimrc
-$ ln -s ~/.dotfiles/editors/vim/.gvimrc.local .gvimrc
+ln -s ~/.dotfiles/editors/vim/ .vim
+ln -s ~/.dotfiles/editors/vim/.vimrc.local .vimrc
+ln -s ~/.dotfiles/editors/vim/.gvimrc.local .gvimrc
 ```
 
 Sublime Text 3 Support
