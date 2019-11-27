@@ -36,7 +36,7 @@ brew install wget --enable-iri
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
-brew install tmux
+#brew install tmux
 
 # ruby
 brew install openssl
@@ -54,8 +54,8 @@ brew install freetds  # SQL Server support
 # rbenv rehash
 
 # PHP
-brew install php56
-brew install composer
+#brew install php73
+#brew install composer
 
 # run this script when this file changes guy.
 brew install entr
@@ -74,7 +74,7 @@ brew install mtr
 
 # Install other useful binaries
 brew install ack
-brew install git
+#brew install git
 brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
 brew install pv
